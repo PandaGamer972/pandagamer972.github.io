@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video de amor</title>
+</head>
+<body>
+  <video id="video" src="https://youtu.be/nr_mP2EmhEI" controls></video>
+  <script>
+    let video = document.getElementById("video");
+    video.addEventListener("ended", function() {
+      window.close();
+    });
+  </script>
+</body>
+</html>

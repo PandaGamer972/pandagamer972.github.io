@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Debbie...</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  
+  <div id="container">
+    <h1>Debbie...</h1>
+  </div>
+  <p>Feliz dia de San Valentin</p>
+  <p>No sabes lo feliz que me siento en pasar estos 3 temporadas (no puedo escribir anos, porque se escribe asi de feo xd), 
+    y nunca te e dado nada para este dia, y pues aja, aqui estoy, diciendote que me siento muy feliz el haberte conocido, por una amistad tan bella que llevamos, simplemente quiero decirle gracias.... sabes? Al principio esta idea fue un reto con un compa, segun el no podia crear una pagina de google chrome para poder confesar mis sentimientos a alguien y asi fue, nunca lo hice, supongo que el gano, PERO al final si dedique el tiempo para poder hacer esto cosa que la verdad nunca crei que haria... Te Amo, supongo que 3 temporadas de 12 meses son suficientes para poder decirlo, y la vdd si lo siento, se que te amo, y creo que no habia encontrado tanta felicidad hasta el momento que empezo todo, para mi un 10 de febrero de la caotica termporada del 2020</p>
+
+ 
+    <div id="container">
+    <button id="no-amo-button">que bueno</button>
+    <button id="si-amo-button">q mal</button>
+  </div>
+  
+
+
+  <div id="texto-sec">
+  <p>algo que quieras decirme? no se enviara a ningun lado, solo se mantendra aqui para que jonathan lo vea</p> 
+  </div>
+
+ </div>
+
+ 
+ <div class="response-box">
+  <textarea id="response-text"></textarea>
+  <button>
+    <div class="svg-wrapper-1">
+      <div class="svg-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="24">
+          <path fill="none" d="M0 0h24v24H0z"></path>
+          <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+        </svg>
+      </div>
+    </div>
+    <span>Send</span>
+  </button>
+</div>
+
+
+  <script>
+     src="video.js"
+
+    let noAmoButton = document.getElementById("no-amo-button");
+    let siAmoButton = document.getElementById("si-amo-button");
+  
+    noAmoButton.addEventListener("click", function() {
+      alert("Lo siento de oir eso :(");
+    });
+
+    
+      
+    siAmoButton.addEventListener("click", function () {
+        alert("Te amo");
+        const videoWindow = window.open("https://youtu.be/nr_mP2EmhEI", "_blank", "width=600,height=400");
+        
+        // Detecta cuándo ha terminado el video
+        const interval = setInterval(function () {
+          if (videoWindow.closed) {
+            clearInterval(interval);
+            alert("El video ha terminado");
+          }
+        }, 500);
+      
+    });
+
+     src="index.js";
+
+    
+
+        
+  </script>
+
+
+
+  <div id="footer">
+    <p>Estoy un 100 porciento seguro, que la distancia y el 
+        tiempo <b>NO</b> pueden borrar lo que e llegado a sentir por ti.</p>
+  </div>
+</body>
+</html>
