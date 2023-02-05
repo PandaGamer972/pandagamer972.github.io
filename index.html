@@ -16,33 +16,43 @@
 
  
     <div id="container">
-    <button id="no-amo-button">que bueno</button>
-    <button id="si-amo-button">q mal</button>
+    <button id="no-amo-button">JAJA OK.</button>
+    <button id="si-amo-button">cancion?</button>
   </div>
   
 
 
   <div id="texto-sec">
-  <p>algo que quieras decirme? no se enviara a ningun lado, solo se mantendra aqui para que jonathan lo vea</p> 
+  <p>algo que quieras decirme? no se enviara a ningun lado, 
+    <br>solo se mantendra aqui para que jonathan lo vea</p> 
   </div>
 
- </div>
+ <section class="escribe-algo">
+  
+    <div id="contenedor">
+      <label>escribe algo</label>
+      <div class="texto" contenteditable="true"></div>
+    </div>
+    
+
+
+
+    <button>
+      <div class="svg-wrapper-1">
+        <div class="svg-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="24">
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+          </svg>
+        </div>
+      </div>
+      <span>enviar</span>
+    </button>
+    <p>enrealidad no sirve de mucho el enviar...</p>
+ </section>
 
  
- <div class="response-box">
-  <textarea id="response-text"></textarea>
-  <button>
-    <div class="svg-wrapper-1">
-      <div class="svg-wrapper">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="24">
-          <path fill="none" d="M0 0h24v24H0z"></path>
-          <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
-        </svg>
-      </div>
-    </div>
-    <span>Send</span>
-  </button>
-</div>
+ 
 
 
   <script>

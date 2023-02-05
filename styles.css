@@ -10,7 +10,7 @@ h1 {
   button {
     width: 150px;
     height: 50px;
-    font-size: 20px;
+    font-size: 700px;
     margin: 20px;
   }
   
@@ -18,31 +18,29 @@ h1 {
   #no-amo-button {
     background-color: gray;
     color: white;
+    font-size: 1.5rem;
   }
   
-  .response-box{
-  background-color: rgb(255, 255, 255,1);
-  display: flex;
-  text-align: justify;
-  }
-  #response-text {
-    background-color: rgb(162, 250, 250);
-    font-style: inherit;
-    justify-content:center;
-
+#texto-sec{
+    text-align: center;
+    color: rgb(44, 75, 176);
+    font-weight: bold;
+    font-size: 4rem;
   }
 
 #video {
   display: flex;
   align-content: center;
   width: max-content;
-height: max-content;
+  height: max-content;
 }
   
   /* Estilos para el botón "También te amo" */
   #si-amo-button {
     background-color: rgb(255, 130, 151);
     color: white;
+    font-size: 1.5rem;
+    align-content: center;
   }
   
   /* Estilos para el contenedor principal */
@@ -52,11 +50,9 @@ height: max-content;
   }
   
   #texto-sec {
-
-display: flex;
-align-content: center;
-text-shadow: 0.25em;
-font-style: italic;
+  align-content: center;
+  text-shadow: 0.25em;
+  font-style: italic;
 }
   
 
@@ -77,11 +73,75 @@ font-style: italic;
     position: absolute;
     bottom: 10;
     width: 100%;
+    margin: 0;
+    
+  }
+
+  /* caja para escribir algo*/
+
+  
+  #contenedor{
+    display: inline-block;
+    min-width: 1000px;
+    height: fit-content ;
+  }
+
+  #texto{
+    background-color: rgba(146, 146, 146, 0.357);
+    width: 100%;
+    height: 100%;
+    border: 1.5px solid rgb(209, 165, 85);
+  }
+
+
+  label{
+    position:relative;
+    left: 50px;
+    pointer-events: none;
+    transition: 150ms cubic-bezier(.4, 0, .2, 1);
+    transform: translateY(1rem);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: rgba(61, 60, 60, 0.361);
+    font-size: 2rem;
     
   }
 
   
+
+
+  .texto{
+    border: solid 1.5px orange;
+    border-radius: 15px;
+    background: none;
+    padding: .5rem;
+    font-size: 2rem;
+    transition: 150ms cubic-bezier(.4, 0, .2, 1);
+    width: 1000px;
+    height: fit-content;
+    
+  }
+
+
+  	.texto:focus{
+    outline: none;
+    border: 1.5px solid lightsteelblue;
+    
+    
+  }
+
+    .texto:focus ~ label{
+    transform: translateY(-50%) scale(1.1);
+    background: rgb(255, 255, 255);
+    color: rgb(92, 92, 92);
+  }
+
+
+p{
+  color: black;
+}
   button {
+    
     font-family: inherit;
     font-size: 20px;
     background: royalblue;
@@ -133,5 +193,8 @@ font-style: italic;
       transform: translateY(-0.1em);
     }
   }
+
+
+  
   
   
